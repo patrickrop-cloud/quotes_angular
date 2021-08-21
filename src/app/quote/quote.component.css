@@ -2,6 +2,8 @@
     background-color: rgb(46, 245, 245);
     display: flexbox;
     text-align: center;
+    margin: 0;
+    padding: 0;
     
 }
 
