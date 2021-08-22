@@ -18,9 +18,9 @@ export class QuoteComponent implements OnInit {
     new Quote(6, 'Go to the Gym', 'Do some weight lifting'),
   ];
   
-  // toggleDetails(index){
-  //   this.quotes[index].showDescription = !this.quotes[index].showDescription;
-  // }
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
   
 
   constructor() { }

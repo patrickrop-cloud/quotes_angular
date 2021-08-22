@@ -1,10 +1,20 @@
 <div>
   <h1>My Quotes</h1>
-  <ul>
-    <li *ngFor='let quote of quotes'>
-      {{quote.name}}
+  <!-- <ul>
+    <li *ngFor='let quote of quotes; let i= index'>
+      {{quote.name}} 
       <app-quote-detail [quote]='quote'></app-quote-detail>
-    </li>
-  </ul>
+    </li> -->
+  <!-- </ul> -->
+  <div class="row">
+    <div class="col-md-6" id="quotes">
+       <ol>
+          <div class="box" *ngFor='let quote of quotes; let i= index' >
+          <li appHighlighter><h3>{{quote.name}}</h3></li>
+          <button (click)='toggleDetails(i)'  class="btn btn-primary">Details</button>
+          <app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isDelete) = 'deleteQuote($event,i)'></app-quote-details>
+       </div>
+       </ol>
+    </div>
   <p *ngIf='quotes.length > 4'>You have alot of nice quotes. Keep it up! </p>
 </div>
