@@ -1,4 +1,4 @@
-# Quotes by Patrick Rop
+# Angular Quotes App by Patrick Rop
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
 
