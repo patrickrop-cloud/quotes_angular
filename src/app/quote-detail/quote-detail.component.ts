@@ -12,7 +12,7 @@ export class QuoteDetailComponent implements OnInit {
   @Output() isDelete = new EventEmitter<boolean>();
 
 
-  quoteComplete(Delete:boolean){
+  quoteDelete(Delete:boolean){
     this.isDelete.emit(Delete);
   }
 
