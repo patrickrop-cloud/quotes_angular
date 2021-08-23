@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+
+
 *{
     background-color: rgb(46, 245, 245);
     display: flexbox;
@@ -12,4 +15,8 @@ h1{
     color: darkorange;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+.p{
+    font-size: 5px;
+    font-family: 'Yesteryear', cursive;
 }
