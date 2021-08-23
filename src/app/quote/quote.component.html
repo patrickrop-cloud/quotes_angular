@@ -11,13 +11,13 @@
        <ol>
           <div class="box" *ngFor='let quote of quotes; let i = index' >
           <li appHighlighter><h3>{{quote.name}}</h3></li>
-          <button (click)='toggleDetails(i)'  class="btn btn-primary">Details</button>
+          <button (click)='toggleDetails(i)'  class="btn btn-primary">See Details</button>
           <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isDelete) = 'deleteQuote($event,i)'></app-quote-detail>
        </div>
        </ol>
        <div class="col-md-6">
-        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-     </div>
+   <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+</div>
     </div>
   <p *ngIf='quotes.length > 4'>You have alot of nice quotes. Keep it up! </p>
 </div>
